@@ -1,0 +1,90 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "import/no-extraneous-dependencies": "off",
+    "no-use-before-define": "off",
+    "no-confusing-arrow": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
+    "react/require-default-props": "off",
+    "import/prefer-default-export": "off",
+    // "arrow-body-style": "off",
+    "react/jsx-wrap-multilines": "off",
+    "function-paren-newline": "off",
+    "object-curly-newline": "off",
+    "operator-linebreak": "off",
+    "react/jsx-curly-newline": "off",
+    "implicit-arrow-linebreak": "off",
+    "indent": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "prefix": [
+          "I"
+        ],
+        "format": [
+          "PascalCase"
+        ]
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".tsx"
+        ]
+      }
+    ],
+    "@typescript-eslint/no-use-before-define": [
+      "error"
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}
